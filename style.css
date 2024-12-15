@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+}
+
+html {
+  display: block;
+  align-content: center;
+  height: 100vh;
+}
+
+#info {
+  margin-top: 10px;
+}
+
+.centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}

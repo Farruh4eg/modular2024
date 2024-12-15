@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Быки и коровы</title>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form id="mainGame" class="centered">
+      <h1>Быки и коровы</h1>
+      <input type="text" id="userInput" minlength="6" pattern="[0-9]{6}" placeholder="Введите 6-значное число" />
+      <section id="buttons">
+        <button id="check" type="submit">Проверить</button>
+        <button id="newGame">Новая игра</button>
+      </form>
+    </section>
+    <section id="info" class="centered">
+      <p>Быки: <span id="bulls"></span></p>
+      <p>Коровы: <span id="cows"></span></p>
+    </section>
+    <input type="hidden" id="hidden"/>
+  </body>
+</html>
