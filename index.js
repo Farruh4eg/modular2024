@@ -43,8 +43,11 @@ function updateCounters() {
 }
 
 function generateNumber() {
-  for (let i = 0; i < 6; ++i) {
-    number += Math.floor(Math.random() * 10);
+  while (number.length !== 6) {
+    let digit = Math.floor(Math.random() * 10);
+    if (!number.includes(digit)) {
+      number += digit;
+    }
   }
 
   hidden.value = number;
