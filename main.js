@@ -6,7 +6,7 @@ const createWindow = () => {
     height: 1080,
   });
 
-  win.loadFile('index.html');
+  win.loadFile('http://localhost:3000');
 };
 
 app.whenReady().then(() => {
