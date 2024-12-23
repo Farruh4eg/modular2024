@@ -38,8 +38,6 @@ function newGame() {
 function updateCounters() {
   bullsText.textContent = bulls;
   cowsText.textContent = cows;
-  bulls = 0;
-  cows = 0;
 }
 
 function generateNumber() {
@@ -54,6 +52,8 @@ function generateNumber() {
 }
 
 function checkGuess() {
+  bulls = 0;
+  cows = 0;
   for (let i = 0; i < 6; ++i) {
     if (number[i] === userInput.value[i]) {
       ++bulls;
